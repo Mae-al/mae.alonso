@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos | Maë Alonso</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html" class="logo">MAË<span>ALONSO</span></a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="apropos.html">À propos</a>
+            <a href="contact.html" class="active">Contact</a>
+
+        </div>
+    </nav>
+
+    <header class="contact-header">
+    <span class="tagline">05. Contact</span>
+    <h1>ME<span class="outline">CONTACTER</span><br></h1>
+</header>
+
+<section class="contact-grid-main">
+    <div class="contact-column">
+        <div class="contact-info-card">
+            <span class="contact-label">Mes Coordonnées</span>
+            <div class="info-item">
+                <small>Email</small>
+                <p>mae.alonso@orange.fr</p>
+            </div>
+            <div class="info-item">
+                <small>LinkedIn</small>
+                <a href="https://www.linkedin.com/in/maë-alonso" target="_blank" class="info-link">
+                    Maë Alonso <span>↗</span>
+                </a>
+            </div>
+            <div class="info-item">
+                <small>Localisation</small>
+                <p>Troyes, Paris et ses alentours</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-form-block">
+        <span class="contact-label">M'envoyer un message</span>
+        <form action="https://formspree.io/f/ton_id_ici" method="POST">
+            <div class="form-group">
+                <input type="text" name="nom" placeholder="VOTRE NOM" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="VOTRE EMAIL" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="VOTRE MESSAGE" required></textarea>
+            </div>
+            <button type="submit" class="btn-send">ENVOYER ↗</button>
+        </form>
+    </div>
+</section>
+
