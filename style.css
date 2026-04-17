@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #F2EFE9;
+    --bg-color: #fffffb;
     --primary-color: #1A3020;
     --accent-color: #A3B18A;
     --font-main: 'Barlow Condensed', 'Syne', sans-serif;;
@@ -25,9 +25,7 @@ nav {
     padding: 25px 8%;
     position: sticky; 
     top: 0; 
-    background: rgba(242, 239, 233, 0.85); 
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
+    background: #fffffb; 
     z-index: 2000;
     transition: all 0.3s ease;
 }
