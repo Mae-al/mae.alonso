@@ -32,18 +32,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-.logo {
-    font-size: 1.1rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: var(--primary-color);
-}
-
-.logo span {
-    color: var(--accent-color); 
-}
-
 a {
     text-decoration: none;
 }
@@ -564,19 +552,6 @@ a.btn-round {
     opacity: 0.9;
 }
 
-/* parcours */
-.search-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.search-content {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
 .about-recherche { 
     padding: 60px 10%; 
     background: var(--accent-color); 
@@ -807,7 +782,7 @@ a.btn-round {
     .contact-grid-main {
         grid-template-columns: 1fr;
     }
-    .contact-form-block, .contact-info-card {
+    .contact-info-card {
         padding: 35px;
     }
 }
