@@ -1079,3 +1079,208 @@ footer {
     font-size: 0.8rem;
     opacity: 0.6;
 }
+
+
+/* ========================= */
+/*   RESPONSIVE GLOBAL       */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVIGATION */
+    nav {
+        padding: 15px 5%;
+    }
+
+    .nav-links a {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    nav .nav-links {
+    justify-content: center;
+    width: 100%;
+}
+
+    /* HERO ACCUEIL */
+    .hero-creative {
+        padding: 40px 5%;
+        gap: 40px;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-sub {
+        font-size: 1.2rem;
+    }
+
+    /* SECTION PROJETS ACCUEIL */
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .preview-card {
+        height: 300px;
+    }
+
+    /* PAGE PROJETS */
+    .projects-grid-perso {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .projects-grid {
+        column-width: 100%;
+    }
+
+    .project-item img {
+    background: var(--bg-color); /* masque le vert */
+}
+
+.project-item {
+    background: #fff; /* neutre, invisible */
+}
+
+    /* PAGE A PROPOS */
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+        padding: 60px 5%;
+    }
+
+    .photo-arrondie {
+        max-width: 280px;
+        margin: auto;
+    }
+
+    .big-text {
+        font-size: 1.2rem;
+    }
+
+    .skills-pill-container img {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* TIMELINE */
+    .timeline {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+
+    /* PAGE CONTACT */
+    .contact-info-card {
+        padding: 30px;
+    }
+
+    /* PAGE DÉTAIL PROJET */
+    .grid-summary {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .process-step {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .step-image img {
+        border-radius: 20px;
+    }
+}
+
+/* ========================= */
+/*   RESPONSIVE TRÈS PETITS ÉCRANS (≤ 480px) */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    h1, h1 span {
+        font-size: 2.8rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    .expertise {
+        padding: 40px 5%;
+    }
+
+    .expertise-card {
+        padding: 25px;
+    }
+
+    .preview-card {
+        height: 220px;
+    }
+
+    .btn-round,
+    .btn-light,
+    .btn-cv {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .wave-decoration {
+        top: 5%;
+        height: 250px;
+    }
+
+    .hero-creative h1,
+    .hero-creative h1 span {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+        line-height: 0.9;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .nav-links {
+        gap: 5px;
+    }
+}
+
+
+/* À partir de 850px → même comportement que mobile : 1 projet par ligne */
+@media (max-width: 850px) {
+
+    .projects-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        column-count: unset !important;
+        column-width: unset !important;
+    }
+
+    .project-item {
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        background: none;
+        break-inside: avoid;
+        height: auto;
+    }
+
+    .project-thumb img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+
+
