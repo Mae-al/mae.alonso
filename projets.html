@@ -1,233 +1,387 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets | Maë Alonso</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-   <nav>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="projets.html" class="active">Projets</a>
-            <a href="apropos.html">À propos</a>
-            <a href="contact.html">Contact</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projets | Maë Alonso</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <nav>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="projets.html" class="active">Projets</a>
+                <a href="apropos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <main class="portfolio-main">
+            <div class="wave-decoration">
+                <svg viewBox="0 0 500 500" preserveAspectRatio="none">
+                    <path d="M-10,100 C150,0 350,200 510,100" stroke="#1A3020" fill="transparent" stroke-width="5" />
+                    <path d="M-10,150 C150,50 350,250 510,150" stroke="#1A3020" fill="transparent" stroke-width="3" opacity="0.5" />
+                </svg>
+            </div>
+
+            <header class="portfolio-header">
+                <span class="tagline">Sélection de travaux</span>
+                <h1>MES <span class="outline">PROJETS</span></h1>
+            </header>
+
+            <section class="projects-grid">
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/sae103_ext.png" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Identité Visuelle</h3>
+                            <div class="project-links">
+                                <a href="mojo_tunes.html" class="project-btn">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-thumb">
+                        <img src="images/musica_latina.png" alt="Projet 02">
+                        <div class="project-overlay">
+                            <span>Développement</span>
+                            <h3>Site Web</h3>
+                            <div class="project-links">
+                                <a href="musica_latina.html" class="project-btn">Détails</a>
+                                <a href="http://sae105.mmi25h01.mmi-troyes.fr" target="_blank" class="project-btn primary">Site ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+                
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/fairepart.png" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Faire-part</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn" 
+                                data-popup="
+                                    <h2>Faire-part</h2>
+
+                                    <h3>Outils</h3>
+                                    <img src='images/logo_ai.svg' alt='Logo Illustrator' class='popup-tool-logo'>
+
+                                    <h3>Brief</h3>
+                                    <p>Ce faire-part a été réalisée sur Illustrator.</p>
+                                ">
+                                    Détails
+                                </a>                            
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/glace.png" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Glace</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn" 
+                                data-popup="
+                                    <h2>Glace</h2>
+
+                                    <h3>Outils</h3>
+                                    <img src='images/logo_ai.svg' alt='Logo Illustrator' class='popup-tool-logo'>
+
+                                    <h3>Brief</h3>
+                                    <p>Cette glace a été réalisée sur Illustrator.</p>
+                                ">
+                                    Détails
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/lettres.png" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Lettres</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn" 
+                                data-popup="
+                                    <h2>Lettres</h2>
+
+                                    <h3>Outils</h3>
+                                    <img src='images/logo_ai.svg' alt='Logo Illustrator' class='popup-tool-logo'>
+
+                                    <h3>Brief</h3>
+                                    <p>Ces lettres ont été réalisées sur Illustrator.</p>
+                                ">
+                                    Détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/cafes_historiques.png" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Développement</span>
+                            <h3>Site Web</h3>
+                            <div class="project-links">
+                                <a href="cafes_historiques.html" class="project-btn">Détails</a>
+                                <a href="https://sae203.mmi25h01.mmi-troyes.fr" target="_blank" class="project-btn primary">Site ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/WR108_H_Maë_Alonso_madclock.jpg" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>"Collage" Horloge</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn" 
+                                data-popup="
+                                    <h2>Collage Horloge</h2>
+
+                                    <h3>Outils</h3>
+                                    <img src='images/logo_ps.svg' alt='Logo Photoshop' class='popup-tool-logo'>
+
+                                    <h3>Brief</h3>
+                                    <p>Ce collage a été réalisée sur Photoshop.</p>
+                                ">
+                                    Détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-thumb">
+                        <img src="images/chocolat.png" alt="Projet 03">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Packaging</h3>
+                            <div class="project-links">
+                               <a href="#" class="project-btn" 
+                                data-popup="
+                                    <h2>Packaging tablette de chocolat</h2>
+
+                                    <h3>Outils</h3>
+                                    <img src='images/logo_ai.svg' alt='Logo Illustrator' class='popup-tool-logo'>
+                                    <img src='images/logo_ps.svg' alt='Logo Photoshop' class='popup-tool-logo'>
+
+                                    <h3>Brief</h3>
+                                    <p>Ce packaging a été réalisée sur Illustrator puis sur Photoshop.</p>
+                                ">
+                                    Détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/WR108_H_Maë_Alonso_utopia.jpg" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Collage Architectural</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn" 
+                                data-popup="
+                                    <h2>Collage Architectural</h2>
+
+                                    <h3>Outils</h3>
+                                    <img src='images/logo_ps.svg' alt='Logo Photoshop' class='popup-tool-logo'>
+
+                                    <h3>Brief</h3>
+                                    <p>Ce collage a été réalisée sur Photoshop.</p>
+                                ">
+                                    Détails
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/WR208_H_Maë_Alonso_Make_Up.jpg" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Caméra</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn" 
+                                data-popup="
+                                    <h2>Caméra</h2>
+
+                                    <h3>Outils</h3>
+                                    <img src='images/logo_ps.svg' alt='Logo Photoshop' class='popup-tool-logo'>
+
+                                    <h3>Brief</h3>
+                                    <p>Cette caméra a été réalisée sur Photoshop.</p>
+                                ">
+                                    Détails
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--<div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/WR208_H_Maë_Alonso_Make_Up.jpg" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Crabe</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn">Détails</a>
+
+                                Le projet :
+    Ce projet a été réalisé dans le cadre du cours de Pratique Artistique et Culturelle, une occasion de s'initier à la technique de la sérigraphie. Le thème imposé était la création d'un logo pour les Journées Portes Ouvertes du BUT MMI, à la fois créatif et adapté à l'impression sérigraphique.
+
+    J'ai choisi de reprendre les codes des tampons de stations de métro japonaises : forme circulaire, typographie en bandeau et illustration centrale. Cette esthétique rappelle le voyage et la découverte, parfaite pour inviter les futurs étudiants à explorer le BUT MMI.
+
+    Réalisation de la sérigraphie :
+    Préparation du fichier : vectorisation du logo sous Illustrator en noir pur sur fond blanc
+    Insolation de l'écran : exposition du pochoir à la lumière UV
+    Rinçage : élimination des zones non exposées pour créer les zones imprimables
+    Impression : application de l'encre rose à la raclette sur tote bags, affiches, t-shirt
+    Séchage : fixation de l'encre pour garantir la durabilité
+    Le processus a nécessité plusieurs essais pour ajuster le temps d'insolation, la pression de la raclette et l'opacité du typon.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item wide">
+                    <div class="project-thumb">
+                        <img src="images/WR208_H_Maë_Alonso_Make_Up.jpg" alt="Projet 01">
+                        <div class="project-overlay">
+                            <span>Design Graphique</span>
+                            <h3>Popeye Auto Ecole</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn">Détails</a>
+
+                                Affiche, post insta, newsletter 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                -->
+            </section>
+
+            <header class="portfolio-header">
+                <span class="tagline">Hors cursus</span>
+                <h2>PROJETS PERSONNELS</h2>
+            </header>
+
+            <section class="projects-grid-perso">
+                <div class="project-item">
+                    <div class="project-thumb">
+                        <img src="images/gata.jpg" alt="Projet Perso 01">
+                        <div class="project-overlay">
+                            <span>Affiche</span>
+                            <h3>Ville</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-thumb">
+                        <img src="images/mallow.jpg" alt="Projet Perso 02">
+                        <div class="project-overlay">
+                            <span>Illustration</span>
+                            <h3>Chat</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-thumb">
+                        <img src="images/Dali.jpg" alt="Projet Perso 02">
+                        <div class="project-overlay">
+                            <span>Illustration</span>
+                            <h3>Dali</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-thumb">
+                        <img src="images/Klein.jpg" alt="Projet Perso 02">
+                        <div class="project-overlay">
+                            <span>Illustration</span>
+                            <h3>Klein</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-btn">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Maë Alonso © 2026 — Portfolio MMI</p>
+        </footer>
+
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <div class="modal-close" id="closeModal">×</div>
+                <div id="modalContent"></div>
+            </div>
         </div>
-    </nav>
 
-    <main class="portfolio-main">
-        <div class="wave-decoration">
-            <svg viewBox="0 0 500 500" preserveAspectRatio="none">
-                <path d="M-10,100 C150,0 350,200 510,100" stroke="#1A3020" fill="transparent" stroke-width="5" />
-                <path d="M-10,150 C150,50 350,250 510,150" stroke="#1A3020" fill="transparent" stroke-width="3" opacity="0.5" />
-            </svg>
-        </div>
+        <script>
+            document.querySelectorAll("[data-popup]").forEach(btn => {
+                btn.addEventListener("click", function(e) {
+                    e.preventDefault();
 
-        <header class="portfolio-header">
-            <span class="tagline">Sélection de travaux</span>
-            <h1>MES <span class="outline">PROJETS</span></h1>
-        </header>
+                    const content = this.getAttribute("data-popup");
+                    document.getElementById("modalContent").innerHTML = content;
 
-        <section class="projects-grid">
-            <div class="project-item wide">
-                <div class="project-thumb">
-                    <img src="images/sae103_ext.png" alt="Projet 01">
-                    <div class="project-overlay">
-                        <span>Design Graphique</span>
-                        <h3>Identité Visuelle</h3>
-                        <div class="project-links">
-                            <a href="mojo_tunes.html" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    document.getElementById("projectModal").classList.add("active");
+                });
+            });
 
-            <div class="project-item">
-                <div class="project-thumb">
-                    <img src="images/musica_latina.png" alt="Projet 02">
-                    <div class="project-overlay">
-                        <span>Développement</span>
-                        <h3>Site Web</h3>
-                        <div class="project-links">
-                            <a href="musica_latina.html" class="project-btn">Détails</a>
-                            <a href="http://sae105.mmi25h01.mmi-troyes.fr" target="_blank" class="project-btn primary">Site ↗</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            document.getElementById("closeModal").onclick = () => {
+                document.getElementById("projectModal").classList.remove("active");
+            };
 
-            
-            
-            <div class="project-item wide">
-                <div class="project-thumb">
-                    <img src="images/fairepart.png" alt="Projet 01">
-                    <div class="project-overlay">
-                        <span>Design Graphique</span>
-                        <h3>Faire-part</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item wide">
-                <div class="project-thumb">
-                    <img src="images/glace.png" alt="Projet 01">
-                    <div class="project-overlay">
-                        <span>Design Graphique</span>
-                        <h3>Glace</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item wide">
-                <div class="project-thumb">
-                    <img src="images/lettres.png" alt="Projet 01">
-                    <div class="project-overlay">
-                        <span>Design Graphique</span>
-                        <h3>Lettres</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item wide">
-                <div class="project-thumb">
-                    <img src="images/cafes_historiques.png" alt="Projet 01">
-                    <div class="project-overlay">
-                        <span>Développement</span>
-                        <h3>Site Web</h3>
-                        <div class="project-links">
-                            <a href="cafes_historiques.html" class="project-btn">Détails</a>
-                            <a href="https://sae203.mmi25h01.mmi-troyes.fr" target="_blank" class="project-btn primary">Site ↗</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item wide">
-                <div class="project-thumb">
-                    <img src="images/WR108_H_Maë_Alonso_madclock.jpg" alt="Projet 01">
-                    <div class="project-overlay">
-                        <span>Design Graphique</span>
-                        <h3>"Collage" Horloge</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item">
-                <div class="project-thumb">
-                    <img src="images/chocolat.png" alt="Projet 03">
-                    <div class="project-overlay">
-                        <span>Design Graphique</span>
-                        <h3>Packaging</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            document.getElementById("projectModal").onclick = (e) => {
+                if (e.target.id === "projectModal") {
+                    document.getElementById("projectModal").classList.remove("active");
+                }
+            };
+        </script>
 
-            <div class="project-item wide">
-                <div class="project-thumb">
-                    <img src="images/WR108_H_Maë_Alonso_utopia.jpg" alt="Projet 01">
-                    <div class="project-overlay">
-                        <span>Design Graphique</span>
-                        <h3>Collage Architectural</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item wide">
-                <div class="project-thumb">
-                    <img src="images/WR208_H_Maë_Alonso_Make_Up.jpg" alt="Projet 01">
-                    <div class="project-overlay">
-                        <span>Design Graphique</span>
-                        <h3>Appareil photo</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <header class="portfolio-header">
-            <span class="tagline">Hors cursus</span>
-            <h2>PROJETS PERSONNELS</h2>
-        </header>
-
-        <section class="projects-grid-perso">
-            <div class="project-item">
-                <div class="project-thumb">
-                    <img src="images/gata.jpg" alt="Projet Perso 01">
-                    <div class="project-overlay">
-                        <span>Affiche</span>
-                        <h3>Ville</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-thumb">
-                    <img src="images/mallow.jpg" alt="Projet Perso 02">
-                    <div class="project-overlay">
-                        <span>Illustration</span>
-                        <h3>Chat</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-thumb">
-                    <img src="images/Dali.jpg" alt="Projet Perso 02">
-                    <div class="project-overlay">
-                        <span>Illustration</span>
-                        <h3>Dali</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-thumb">
-                    <img src="images/Klein.jpg" alt="Projet Perso 02">
-                    <div class="project-overlay">
-                        <span>Illustration</span>
-                        <h3>Klein</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Maë Alonso © 2026 — Portfolio MMI</p>
-    </footer>
-</body>
+    </body>
 </html>
