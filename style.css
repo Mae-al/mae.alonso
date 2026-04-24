@@ -373,7 +373,7 @@ a.btn-round {
     border-radius: 20px; 
     overflow: hidden;
     position: relative;
-    background: var(--accent-color);
+    background: var(--bg-color);
 }
 
 .project-item.wide {
@@ -462,21 +462,55 @@ a.btn-round {
     transform: translateY(0);
 }
 
-.project-btn.primary {
-    background: var(--accent-color);
-    color: var(--primary-color);
-    border-color: var(--accent-color);
-}
-
-.project-btn.primary:hover {
-    background: transparent;
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
 
 .project-item:hover .project-overlay {
     opacity: 1;
 }
+
+
+/* Conteneur perso */
+.perso-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: none; /* IMPORTANT : aucun fond */
+}
+
+/* Image naturelle, sans contrainte */
+.perso-img {
+    width: 100%;
+    height: auto; /* garde la vraie forme */
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.perso-card:hover .perso-img {
+    transform: scale(1.03); /* léger grossissement */
+}
+
+/* Ligne texte + logo */
+.perso-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+/* Texte */
+.perso-type {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Logo */
+.perso-tool {
+    width: 26px;
+    height: 26px;
+}
+
+
+
 
 
 @media (max-width: 850px) {
@@ -1068,8 +1102,43 @@ a.btn-round {
     margin: 10px 0 20px;
 }
 
+.final-link-image img {
+    transition: 0.3s ease;
+}
+
+.final-link-image:hover img {
+    transform: scale(1.02);
+}
+
+.final-caption {
+    margin-top: 10px;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
 
 
+.brief-pdf {
+    margin-top: 25px;
+}
+
+.pdf-btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border: 2px solid var(--bg-color); /* même style que tes outlines */
+    border-radius: 12px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--bg-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.pdf-btn:hover {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
 
 
 /* FOOTER */
@@ -1253,8 +1322,6 @@ footer {
     }
 }
 
-
-/* À partir de 850px → même comportement que mobile : 1 projet par ligne */
 @media (max-width: 850px) {
 
     .projects-grid {
