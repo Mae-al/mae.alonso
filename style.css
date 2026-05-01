@@ -238,15 +238,21 @@ a.btn-round {
     border-radius: var(--radius);
     overflow: hidden;
     position: relative;
-    height: 450px;
-    border: 2px solid var(--primary-color);
-    transition: transform 0.3s ease; 
+    width: 350px;
+    height: auto;
+    border: 3px solid var(--primary-color);
+    transition: transform 0.3s ease;
+    margin-left: 300px;
+}
+
+.preview-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .floating-img {
     width: 100%;
     height: 100%;
-    background: var(--primary-color);
 }
 
 .floating-img img {
