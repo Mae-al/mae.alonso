@@ -663,6 +663,47 @@ a.btn-round {
     box-shadow: 0 15px 25px rgba(0,0,0,0.15);
 }
 
+/* Conteneur logo + étoiles */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+}
+
+/* Étoiles invisibles par défaut */
+.skill-stars {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Génération automatique des étoiles */
+.skill-stars::before {
+    content: "★★★★★";
+    background: linear-gradient(
+        90deg,
+        var(--primary-color) calc(var(--level) * 20%),
+        #ccc calc(var(--level) * 20%)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Lecture du niveau */
+.skill-stars {
+    --level: attr(data-level number);
+}
+
+/* Apparition au hover du logo */
+.skill-item:hover .skill-stars {
+    opacity: 1;
+}
+
 /* timeline */
 .timeline {
     margin-top: 40px;
@@ -1145,6 +1186,50 @@ a.btn-round {
     background-color: var(--bg-color);
     color: var(--primary-color);
 }
+
+/* Conteneur qui donne la perspective */
+.step-image {
+    perspective: 1500px;
+}
+
+/* Carte */
+.tarot-card {
+    width: 100%;
+    aspect-ratio: 4/6;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.3s ease;
+    will-change: transform;
+}
+
+/* Flip */
+.tarot-card:hover {
+    transform: rotateY(180deg);
+}
+
+/* Faces */
+.tarot-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+/* Images */
+.tarot-face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateZ(1px); /* empêche les bugs */
+}
+
+/* Dos */
+.tarot-back {
+    transform: rotateY(180deg);
+}
+
 
 
 /* FOOTER */
