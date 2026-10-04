@@ -119,7 +119,7 @@ h3 {
 
 p, .hero-sub { 
     margin-top: 30px; 
-    opacity: 0.7; 
+    opacity: 0.85; 
     font-size: 1.5rem;
 }
 
@@ -338,9 +338,9 @@ a.btn-round {
 /* PAGE PROJETS */
 .tagline {
     margin-top: 30px; 
-    opacity: 0.7; 
+    opacity: 1; 
     font-size: 1.5rem;
-    color: var(--accent-color);
+    color: #5E7048;
 }
 .portfolio-main {
     padding: 80px 5%;
@@ -1024,7 +1024,7 @@ a.btn-round {
 .step-text p {
     font-size: 1.05rem;
     line-height: 1.7;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .step-image {
@@ -1052,8 +1052,17 @@ a.btn-round {
 }
 
 .final-image-wrapper img {
-    width: 100%;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(100%, 800px);
+    max-height: 70vh;
+    margin: 0 auto;
     border-radius: 40px;
+}
+
+.final-link-image {
+    display: block;
 }
 
 .project-footer {
@@ -1161,7 +1170,7 @@ a.btn-round {
     margin-top: 10px;
     font-family: 'Syne', sans-serif;
     font-size: 0.9rem;
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 
@@ -1187,57 +1196,12 @@ a.btn-round {
     color: var(--primary-color);
 }
 
-/* Conteneur qui donne la perspective */
-.step-image {
-    perspective: 1500px;
-}
-
-/* Carte */
-.tarot-card {
-    width: 100%;
-    aspect-ratio: 4/6;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 1.3s ease;
-    will-change: transform;
-}
-
-/* Flip */
-.tarot-card:hover {
-    transform: rotateY(180deg);
-}
-
-/* Faces */
-.tarot-face {
-    position: absolute;
-    inset: 0;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    border-radius: 40px;
-    overflow: hidden;
-}
-
-/* Images */
-.tarot-face img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translateZ(1px); /* empêche les bugs */
-}
-
-/* Dos */
-.tarot-back {
-    transform: rotateY(180deg);
-}
-
-
-
 /* FOOTER */
 footer {
     text-align: center;
     padding: 50px;
     font-size: 0.8rem;
-    opacity: 0.6;
+    opacity: 0.75;
 }
 
 
@@ -1442,3 +1406,140 @@ footer {
 
 
 
+
+
+/* ========================= */
+/*   CARROUSEL D'IMAGES      */
+/* ========================= */
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    border-radius: 40px;
+    background: rgba(163, 177, 138, 0.12);
+    outline-offset: 4px;
+}
+
+.carousel-track::-webkit-scrollbar { display: none; }
+
+.carousel-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.step-image .carousel-slide img {
+    width: auto;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+}
+
+.carousel-btn {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.25;
+    cursor: default;
+    pointer-events: none;
+}
+
+.carousel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    opacity: 0.2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    opacity: 1;
+    width: 26px;
+    border-radius: 10px;
+    background: var(--primary-color);
+}
+
+.carousel-count {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.75;
+    min-width: 52px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-track { border-radius: 20px; }
+    .carousel-btn { width: 36px; height: 36px; }
+    .carousel-footer { gap: 10px; }
+}
+
+/* Empêche le carrousel de déformer la grille */
+.step-image, .carousel { min-width: 0; }
+
+/* Texte synchronisé avec le carrousel (ex. page Tarot) */
+.step-text.has-sync [data-slide]:not(.is-active) { display: none; }
+.step-text [data-slide] h3 {
+    margin-top: 25px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+
+/* Navigation entre projets */
+.project-nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 80px;
+}
